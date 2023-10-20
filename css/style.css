@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+body {
+    background-image: url('../imgs/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* --- HEADER ELEMENTS --- */
+
+header li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+header a:hover {
+    color: orange;
+}
+
+/* --- HEADER --- */
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+header nav {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav .links{
+    display: flex;
+    gap: 2rem;
+}
+
+header nav .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* --- DROPDOWN MENU --- */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: heigth .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    width: 100%;
+    background-color: #00000060;
+}
+
+footer .group-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 40px 0px;
+}
+
+footer .group-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .group-1 .box figure img {
+    width: 150px;
+}
+
+footer .group-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+footer .group-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+footer .group-1 .social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+footer .group-1 .social a:hover {
+    color: rgb(255, 136, 0);
+}
+
+footer .group-2 {
+    /* background-color: #0a1a2aae; */
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+footer .group-2 small {
+    font-size: 17px;
+}
+
+/* MAIN */
+
+main {
+    min-height: calc(100vh - 60px - 286px);
+}
+
+/* --- HERO --- */
+
+section#hero {
+    min-height: calc(100vh - 60px - 286px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 136, 0);
+}
+
+/* --- ANIMATION HOME --- */
+
+.blur-in-expand {
+    animation:blur-in-expand 0.4s linear both
+} 
+
+@keyframes blur-in-expand {
+    0% {
+        transform:scale(0);filter:blur(12px);opacity:0
+    }
+    100% {
+        transform:scale(1);filter:blur(0);opacity:1
+    }
+}
+
