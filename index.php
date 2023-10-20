@@ -55,6 +55,10 @@ if(method_exists($printController, $action) && !$subaction) {
 
     $printController->$action();
 }
+else if(is_int((int) $action) && !$subaction)
+{   
+    $printController->show((int) $action);
+}
 else if(is_int((int) $action) && $subaction) //Pero en caso que $subaction esté definida, se ejecutará esa subacción
 { 
     $printController->$subaction($action);

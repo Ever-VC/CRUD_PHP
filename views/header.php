@@ -20,14 +20,14 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="<?= BASE_DIR; ?>inicio/index">PHP ORIENTADO A OBJETOS</a>
+                <a href="<?= BASE_DIR; ?>Home/index">PHP ORIENTADO A OBJETOS</a>
             </div>
             <ul class="links">
-                <li><a href="<?= BASE_DIR; ?>inicio/">INCIO</a></li>
-                <li><a href="<?= BASE_DIR; ?>clientes/">CLIENTES</a></li>
-                <li><a href="<?= BASE_DIR; ?>clientes/new">REGISTRO</a></li>
+                <li><a href="<?= BASE_DIR; ?>Home/index">INCIO</a></li>
+                <li><a href="<?= BASE_DIR; ?>client/">CLIENTES</a></li>
+                <li><a href="<?= BASE_DIR; ?>client/new">REGISTRO</a></li>
             </ul>
-            <a href="https://github.com/Ever-VC/Front_Controller_PHP.git" class="action_btn" target="_blank">
+            <a href="#" class="action_btn" target="_blank">
                 <i class="fa-brands fa-github"></i>
                 GitHub
             </a>
@@ -36,9 +36,9 @@
             </div>
         </nav>
         <div class="dropdown_menu">
-            <li><a href="<?= BASE_DIR; ?>inicio/">INICIO</a></li>
-            <li><a href="<?= BASE_DIR; ?>index.php?controller=About&action=showAbout">CLIENTES</a></li>
-            <li><a href="<?= BASE_DIR; ?>index.php?controller=Contact&action=showContact">REGISTRO</a></li>
-            <li><a href="https://github.com/Ever-VC" class="action_btn">GitHub</a></li>
+            <li><a href="<?= BASE_DIR; ?>Home/index">INICIO</a></li>
+            <li><a href="<?= BASE_DIR; ?>client/">CLIENTES</a></li>
+            <li><a href="<?= BASE_DIR; ?>client/new">REGISTRO</a></li>
+            <li><a href="#" class="action_btn">GitHub</a></li>
         </div>
     </header>

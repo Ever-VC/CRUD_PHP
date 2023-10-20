@@ -224,3 +224,179 @@ section#hero {
     }
 }
 
+/* --- CLIENTS --- */
+
+main .table {
+    width: 50%;
+    text-align: left;
+    background-color: #efefef38;
+    border-collapse: collapse;
+}
+
+main .table th, main .table td {
+    /* border: solid 1px black; */
+    padding: 15px;
+}
+
+main .table thead {
+    background-color: #246355bf;
+    border-bottom: solid 5px #0f362D;
+}
+
+main .table tr:nth-child(even) {
+    background-color: #dddddd42;
+}
+
+main .table tr:hover td {
+    background-color: rgba(255, 136, 0, 0.493);
+    /* color: rgb(255, 136, 0); */
+}
+
+main .table .btns {
+    text-align: center;
+}
+
+main .table .btns a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main .table .btns a:nth-child(1), main .table .btns a:nth-child(2) {
+    margin-right: 10px;
+}
+
+main .table .btns a:nth-child(1):hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+main .table .btns a:nth-child(2):hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+main .table .btns a:nth-child(3):hover {
+    color: gold;
+    cursor: pointer;
+}
+
+/* --- CLIENT PROFILE --- */
+
+main .user-container {
+    width: 50%;
+    display: grid;
+    grid-template-areas: 
+        "image data"
+    ;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+}
+
+main .user-container .user-image {
+    grid-area: image;
+    background-color: #009db2bf;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main .user-container .user-image img {
+    width: 300px;
+    margin: auto;
+}
+
+main .user-container .user-data {
+    grid-area: data;
+    display: grid;
+    grid-template-areas: 
+        "personal"
+    ;
+    grid-template-rows: auto;
+    gap: 5px;
+    text-align: left;
+}
+
+main .user-container .user-data  hr {
+    width: 576px;
+    margin-left: 10px;
+}
+
+main .user-container .user-data p {
+    margin: 10px;
+    padding: 5px;
+    background-color: #dddddd42;
+    border-radius: 10px;
+}
+
+.user-data .user-personal-data {
+    grid-area: personal;
+    background-color: #efefef38;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* --- NEW CLIENT --- */
+
+main .newUser-container {
+    width: 28%;
+    padding: 25px 30px;
+    background-color: #efefef38;
+    border-radius: 10px;
+}
+
+main .newUser-container .title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+main .newUser-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 12px 0;
+    text-align: left;
+}
+
+main .newUser-container  .form-group {
+    margin-bottom: 15px;
+    width: calc(100%2 - 20px);
+}
+
+main .newUser-container  .form-group p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-group .input {
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-width: 2px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.form-group .input:focus,
+.form-group .input:valid {
+    border-color: skyblue;
+}
+
+main .newUser-container .btn {
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: blue;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+main .newUser-container .btn:hover {
+    background: rgb(84, 192, 235);
+}
